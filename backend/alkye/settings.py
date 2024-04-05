@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # "whitenoise.middleware.WhiteNoiseMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -122,11 +122,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
-STATICFILES_DIRS  = [
-    os.path.join( BASE_DIR, "myApp" , 'static')
-]
-STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
+# STATICFILES_DIRS  = [
+#     os.path.join( BASE_DIR, "myApp" , 'static')
+# ]
+# STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
 # Default primary key field type
