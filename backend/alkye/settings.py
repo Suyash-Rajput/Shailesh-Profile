@@ -30,6 +30,13 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
+STATICFILES_DIRS  = [
+    os.path.join( BASE_DIR, "myApp" , 'static')
+]
+STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -122,23 +129,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
-
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
-STATICFILES_DIRS  = [
-    os.path.join( BASE_DIR, "myApp" , 'static')
-]
-STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
+# DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = os.environ.get("SECRET_KEY")
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
+# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
