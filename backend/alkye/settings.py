@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ly(wc&tk8y)up8ns1snb!xzyo@q2n$0^n@=h8()m=9*3v*7^3c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['shailesh-profile-1.onrender.com localhost']
+ALLOWED_HOSTS = []
 
 
 STATIC_URL = 'static/'
@@ -134,8 +134,8 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
+DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
 
 # SECRET_KEY = os.environ.get("SECRET_KEY")
 
-# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
