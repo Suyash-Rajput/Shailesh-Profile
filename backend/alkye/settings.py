@@ -59,8 +59,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'shaileshsingh00265@gmail.com'  # Your Gmail email address
 EMAIL_HOST_PASSWORD = 'Shaileshsingh@1234'
 
-STATIC_URL = '/static/'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -131,3 +129,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')
