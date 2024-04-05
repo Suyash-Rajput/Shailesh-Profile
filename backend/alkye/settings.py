@@ -31,12 +31,6 @@ ALLOWED_HOSTS = []
 
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
-STATICFILES_DIRS  = [
-    os.path.join( BASE_DIR, "myApp" , 'static')
-]
-STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -128,6 +122,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
+STATICFILES_DIRS  = [
+    os.path.join( BASE_DIR, "myApp" , 'static')
+]
+STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
