@@ -31,11 +31,11 @@ ALLOWED_HOSTS = []
 
 
 STATIC_URL = 'static/'
-# STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
-# STATICFILES_DIRS  = [
-#     os.path.join( BASE_DIR, "myApp" , 'static')
-# ]
-# STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
+STATICFILES_DIRS  = [
+    os.path.join( BASE_DIR, "myApp" , 'static')
+]
+STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Application definition
 
