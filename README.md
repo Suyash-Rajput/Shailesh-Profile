@@ -6,6 +6,17 @@ This repository contains the code for my personal web page built using Django an
 Deployment:
 The web page is currently hosted on Render. You can access it using the following URL: https://shailesh-profile.onrender.com/
 
+Django Setup:
+ 1:- Conda create --name django python=3.11
+ 2:- Conda activate  django
+ 3:- pip install django
+ 4:- django-admin  startproject backend.
+ 5:- cd backend.
+ 6:- django-admin startproject myApp
+ 7:- python manage.py migrate
+ 8:- python mangae.py createsuperuser
+ 9:- python manage.py runserver 
+
 Technologies Used:
 Django
 HTML
