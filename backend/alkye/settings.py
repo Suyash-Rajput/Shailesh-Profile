@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ly(wc&tk8y)up8ns1snb!xzyo@q2n$0^n@=h8()m=9*3v*7^3c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shailesh-profile.onrender.com']
 
 
 STATIC_URL = '/static/'
