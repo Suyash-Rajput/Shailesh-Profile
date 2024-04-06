@@ -123,7 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-# STATIC_ROOT = BASE_DIR / "myApp" / 'staticfiles'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
 # STATICFILES_DIRS  = [
 #     os.path.join( BASE_DIR, "myApp" , 'static')
 # ]
