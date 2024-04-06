@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.http import HttpResponse
 
 # Create your views here.
-def home(request):
+def home_page(request):
     context = {}
     return render(request, 'myApp/home.html', context)
 
