@@ -12,7 +12,7 @@ Django Setup:
  3:- pip install django
  4:- django-admin  startproject backend.
  5:- cd backend.
- 6:- django-admin startproject myApp
+ 6:- django-admin startapp myApp
  7:- python manage.py migrate
  8:- python mangae.py createsuperuser
  9:- python manage.py runserver 
