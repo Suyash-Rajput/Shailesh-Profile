@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'myApp'
 ]
 
@@ -123,7 +124,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_ROOT = BASE_DIR/ 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS  = [
     os.path.join( BASE_DIR, 'myApp/static')
 ]
@@ -135,8 +136,8 @@ STATICFILES_STORAGE =  "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
+# DEBUG = os.environ.get("DEBUG",  "False").lower() == "true"
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = os.environ.get("SECRET_KEY")
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')     #  uncomment if you want to run in production.
+# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(' ')     #  uncomment if you want to run in production.
