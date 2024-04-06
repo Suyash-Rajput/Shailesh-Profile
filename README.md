@@ -14,7 +14,7 @@ Usage:
 Feel free to explore my profile and projects showcased on the web page. If you have any feedback or suggestions, please don't hesitate to reach out.
 
 Author:
-[Your Name]
+Suyash Singh
 
 License:
 This project is licensed under the MIT License.
