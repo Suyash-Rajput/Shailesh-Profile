@@ -30,7 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-STATIC_URL = '/myApp/static/'
+STATIC_URL = '/static/'
 # Application definition
 
 INSTALLED_APPS = [
